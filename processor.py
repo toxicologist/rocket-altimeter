@@ -2,6 +2,7 @@ import serial, time
 import plotly.offline as py
 import plotly.graph_objs as go
 
+print("Connecting to serial port..")
 ser = serial.Serial('COM3', 9600, timeout=1, write_timeout=1)
 
 def read_lines(): #  Reading from the serial, sends text to activate it
