@@ -91,4 +91,9 @@ def get_data(title):
     print(apo)
     maxSpeed = get_max_speed(filtered)
     print(maxSpeed)
+    print("\nGenerating chart...")
     create_graph(filtered,apo,maxSpeed,title)
+
+
+filename = str(input("Enter the file name (.html): "))
+get_data(filename)
